@@ -16,7 +16,11 @@ module.exports = {
     browser: true
   },
   rules: {
-    'ember/no-jquery': 'error'
+    'ember/no-jquery': 'error',
+    'no-unused-vars': [
+      'error',
+      { 'varsIgnorePattern': '^_' }
+    ]
   },
   overrides: [
     // node files
@@ -27,6 +31,7 @@ module.exports = {
         'ember-cli-build.js',
         'index.js',
         'testem.js',
+        'lib/**/*.js',
         'blueprints/*/index.js',
         'config/**/*.js',
         'tests/dummy/config/**/*.js'

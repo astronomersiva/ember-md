@@ -1,0 +1,39 @@
+```javascript
+  import Component from '@glimmer/component';
+  import { tracked } from '@glimmer/tracking';
+  import { action } from '@ember/object';
+
+  export default class CounterComponent extends Component {
+    @tracked counter = 0;
+
+    @action
+    incrementCounter() {
+      this.counter++;
+    }
+
+    @action
+    decrementCounter() {
+      this.counter--;
+    }
+  }
+```
+
+---
+
+## counter
+
+*Press the buttons below to interact with the counter.*
+
+* You can increase the counter's value.
+* You can decrease the counter's value
+* Just showing off lists ¯\\\_(ツ)_/¯.
+
+<button {{on "click" this.incrementCounter}}>+</button>
+{{this.counter}}
+<button {{on "click" this.decrementCounter}}>-</button>
+
+<hr>
+
+**You can also invoke components from other components.**
+
+<Greet />

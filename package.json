@@ -1,13 +1,14 @@
 {
   "name": "ember-md",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Write Ember in Markdown.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "markdown"
   ],
-  "repository": "",
+  "repository": "https://github.com/astronomersiva/ember-md",
   "license": "MIT",
-  "author": "",
+  "author": "Sivasubramanyam A<sivasubramanyama@gmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -21,11 +22,20 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
+    "@ember/edition-utils": "^1.1.1",
+    "@glimmer/component": "^0.14.0-alpha.13",
+    "broccoli-file-creator": "^2.1.1",
+    "broccoli-merge-trees": "^3.0.2",
+    "broccoli-stew": "^3.0.0",
     "ember-cli-babel": "^7.11.1",
-    "ember-cli-htmlbars": "^4.0.0"
+    "ember-cli-htmlbars": "^4.0.0",
+    "globby": "^10.0.1",
+    "remark-html": "^10.0.0",
+    "remark-parse": "^7.0.1",
+    "unified": "^8.4.1"
   },
   "devDependencies": {
-    "@ember/optional-features": "^1.0.0",
+    "@ember/optional-features": "^1.1.0",
     "babel-eslint": "^10.0.3",
     "broccoli-asset-rev": "^3.0.0",
     "ember-cli": "~3.13.1",
@@ -42,7 +52,7 @@
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-qunit": "^4.5.1",
     "ember-resolver": "^5.3.0",
-    "ember-source": "~3.13.0",
+    "ember-source": "https://s3.amazonaws.com/builds.emberjs.com/beta/shas/145ab13849706ed2d2d4225e5dbed37e5bc178bd.tgz",
     "ember-source-channel-url": "^2.0.1",
     "ember-try": "^1.2.1",
     "eslint-plugin-ember": "^7.1.0",

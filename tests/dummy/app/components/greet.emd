@@ -1,0 +1,24 @@
+```javascript
+  import Component from '@glimmer/component';
+  import { tracked } from '@glimmer/tracking';
+  import { action } from '@ember/object';
+
+  export default class GreetComponent extends Component {
+    @tracked name = 'Emberista';
+
+    @action
+    sayName() {
+      window.alert(`Hello, ${this.name}!`);
+    }
+  }
+```
+
+---
+
+## let me greet you
+
+<label>Hey! What's your name?
+  {{input value=name}}
+</label>
+
+<button {{on "click" this.sayName}}>Click Me!</button>
