@@ -5,7 +5,9 @@ This addon lets you write your EmberJS code in Markdown. This is useful
 for cases like blogs where Markdown feels more natural than HBS. It also
 lets you write your JS and template code in the same file. Single File Components 😝
 
-**[You can try an interactive demo here](https://ember-md.netlify.com/)**
+### **[You can try an interactive demo here](https://ember-md.netlify.com/)**
+
+<br />
 
 ![Demo with JS and HBS in the same MD file](emd.gif)
 
