@@ -15,7 +15,7 @@
 
 ---
 
-## let me greet you
+## let me greet you <small style="font-size:.4em">[[Source on GitHub]](https://github.com/astronomersiva/ember-md/blob/master/tests/dummy/app/components/greet.emd)</small>
 
 <label>Hey! What's your name?
   {{input value=name}}

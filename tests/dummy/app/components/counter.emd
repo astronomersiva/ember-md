@@ -20,7 +20,7 @@
 
 ---
 
-## counter
+## counter <small style="font-size:.4em">[[Source on GitHub]](https://github.com/astronomersiva/ember-md/blob/master/tests/dummy/app/components/counter.emd)</small>
 
 *Press the buttons below to interact with the counter.*
 
