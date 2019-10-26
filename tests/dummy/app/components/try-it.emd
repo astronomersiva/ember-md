@@ -2,4 +2,4 @@
 
 ### Want to try this?
 
-Please read the tiny documentation in the [GitHub repo](https://github.com/astronomersiva/ember-md). This addon has not been published yet.
+Please read the tiny documentation in the [GitHub repo](https://github.com/astronomersiva/ember-md). You can run `ember install ember-md` to install this addon in your project.
