@@ -28,9 +28,9 @@
 * You can decrease the counter's value
 * Just showing off lists ¯\\\_(ツ)_/¯.
 
-<button {{on "click" this.incrementCounter}}>+</button>
-{{this.counter}}
-<button {{on "click" this.decrementCounter}}>-</button>
+<button data-action="increment" {{on "click" this.incrementCounter}}>+</button>
+<span data-title="counter">{{this.counter}}</span>
+<button data-action="decrement" {{on "click" this.decrementCounter}}>-</button>
 
 <hr>
 
