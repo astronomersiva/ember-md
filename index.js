@@ -26,7 +26,7 @@ module.exports = {
       );
     });
 
-    return new MergeTrees([appTree, ...compiledJSTrees]);
+    return new MergeTrees([appTree, ...compiledJSTrees].filter(Boolean));
   },
 
   setupPreprocessorRegistry(type, registry) {
